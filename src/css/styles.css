@@ -1,12 +1,17 @@
-/**
+/*
   |============================
   | include css partials with
   | default @import url()
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./how-it-work.css');
+@import url('./vegetables.css');
+@import url('./we-will-call-you.css');
+@import url('./footer.css');
+@import url('./modal.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
