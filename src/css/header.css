@@ -1,6 +1,6 @@
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@
 }
 
 .header-nav-link {
-  transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: font-weight var(--tran-250);
   font-size: 14px;
   line-height: 1.286;
   letter-spacing: -0.035em;
@@ -77,9 +77,9 @@
   height: 24px;
 }
 
-.hamburger-menu-icon {
+/* .hamburger-menu-icon {
   fill: #77ac63;
-}
+} */
 
 /* fries menu button css */
 label {
@@ -136,10 +136,10 @@ input[type='checkbox']:checked ~ span:nth-of-type(3) {
     position: fixed;
     top: 50px;
     left: 100vw;
-    transition: left 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: left var(--tran-250);
     width: 100vw;
     height: calc(100vh - 50px);
-    background-color: #a1c487;
+    background-color: var(--green-color);
     z-index: 999;
   }
 
@@ -150,7 +150,9 @@ input[type='checkbox']:checked ~ span:nth-of-type(3) {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1280px;
   }
 
   .header-nav {
@@ -166,7 +168,7 @@ input[type='checkbox']:checked ~ span:nth-of-type(3) {
   }
 
   .header-nav-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--tran-250);
     color: #141414;
   }
 
@@ -189,9 +191,9 @@ input[type='checkbox']:checked ~ span:nth-of-type(3) {
   }
 
   .shopping-cart-icon {
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke var(--tran-250);
     fill: none;
-    stroke: #141414;
+    stroke: var(--dark-color);
   }
 
   .shopping-cart-icon:is(:hover, :focus) {
@@ -204,7 +206,4 @@ input[type='checkbox']:checked ~ span:nth-of-type(3) {
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1216px;
-  }
 }
