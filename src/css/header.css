@@ -137,6 +137,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+
   .header-nav {
     position: fixed;
     top: 50px;
@@ -157,7 +161,7 @@
   .container {
     padding-left: 32px;
     padding-right: 32px;
-    max-width: 1280px;
+    max-width: 768px;
   }
 
   .header-nav {
@@ -211,4 +215,7 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
