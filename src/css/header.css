@@ -12,9 +12,6 @@
 }
 
 .header-nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   padding-top: 124px;
   text-align: center;
 }
@@ -24,8 +21,6 @@
   font-size: 14px;
   line-height: 1.286;
   letter-spacing: -0.035em;
-  padding-top: 16px;
-  padding-bottom: 16px;
   color: #ffffff;
 }
 
@@ -61,8 +56,8 @@
 .button {
   margin: 0;
   padding: 0;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   border: none;
   background-color: transparent;
 }
@@ -74,7 +69,9 @@
 
 .hamburger-menu {
   display: flex;
+  width: 24px;
   height: 24px;
+  padding: 2px;
 }
 
 /* .hamburger-menu-icon {
@@ -84,7 +81,7 @@
 /* fries menu button css */
 .hamburger {
   display: block;
-  width: 20px;
+  width: 24px;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -152,6 +149,10 @@
     z-index: 999;
   }
 
+  .header-nav-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
   .header-logo {
     flex-basis: 33.3%;
   }
@@ -170,14 +171,16 @@
   }
 
   .header-nav-list {
-    flex-direction: row;
-    gap: 20px;
+    display: flex;
+    gap: 14px;
     padding-top: unset;
     text-align: center;
   }
 
   .header-nav-link {
     transition: color var(--tran-250);
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: #141414;
   }
 
@@ -217,5 +220,19 @@
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+
+  .header-nav-list {
+    gap: 20px;
+  }
+
+  .button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .shopping-cart-icon {
+    width: 24px;
+    height: 24px;
   }
 }
