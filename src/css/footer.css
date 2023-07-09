@@ -1,3 +1,264 @@
+/*! Логотип у футері */
+
 .footer {
-    background-color: blue;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  padding: 80px 0;
+  background-color: var(--light-green);
+}
+
+.footer-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 72px;
+}
+
+.footer-section {
+  text-align: center;
+  border-radius: 100px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.style-footer {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  color: var(--dark-color);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 48px;
+  margin-top: 20px;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo-ftr {
+  list-style-type: none;
+}
+
+.footer-logo-link {
+}
+
+/*! footer menu */
+
+.footer-menu {
+}
+
+.footer-menu-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin-bottom: 48px;
+  justify-content: center;
+}
+
+.footer-menu-item {
+  text-align: center;
+}
+
+.footer-menu-link {
+  color: var(--dark-color);
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+}
+
+/*! Футер соц іконки */
+
+.footer-social-list {
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link {
+  background-color: var(--color-cloud);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  border: 1px solid var(--color-picnic);
+  color: var(--color-picnic);
+}
+
+.social-icons {
+  fill: currentColor;
+}
+
+/*! footer address */
+
+.footer-address {
+}
+
+.footer-address-list {
+}
+
+.list {
+}
+
+.footer-address-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-address-contacts {
+  color: #141414;
+  text-decoration: none;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28px;
+  text-transform: uppercase;
+}
+
+.footer-address-link {
+  margin-bottom: 80px;
+}
+
+.footer-address-position {
+  color: #141414;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.28px;
+}
+
+@media (max-width: 375px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+/*! Футер */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 72px 24px;
+    flex-wrap: wrap;
+  }
+
+  .footer-container-ftr {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+
+  .footer-social-section {
+    margin-top: 0;
+  }
+
+  /*! Футер форм */
+  .footer-form-text {
+    text-align: left;
+  }
+
+  .footer-form-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+}
+
+/*! Media */
+
+@media (min-width: 1280px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 21px;
+  }
+
+  .footer-container {
+    max-width: 100%;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+    /* justify-content: baseline; */
+    align-items: baseline;
+  }
+
+  .footer-container-ftr {
+    display: flex;
+    align-items: baseline;
+    gap: 120px;
+  }
+
+  .footer-social-text {
+    text-align: left;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+
+  .footer-social-section {
+    margin-top: 0;
+  }
+
+  .footer-form-text {
+    text-align: left;
+  }
+
+  .footer-form-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+}
+
+@media (min-width: 1212px) {
+  .footer-container {
+    gap: 80px;
+  }
 }
