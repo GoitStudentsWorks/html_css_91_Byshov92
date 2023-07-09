@@ -43,6 +43,11 @@ input {
     background-color: rgba(46, 47, 66, 0.4);
     transition: visibility var(--tran-250), opacity var(--tran-250);
 }
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
 
 .modal {
     font-family: inherit;
