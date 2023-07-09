@@ -1,3 +1,209 @@
-.header {
-  background-color: green;
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-nav.is-open {
+  left: 0;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 124px;
+  text-align: center;
+}
+
+.header-nav-link {
+  transition: font-weight var(--tran-250);
+  font-size: 14px;
+  line-height: 1.286;
+  letter-spacing: -0.035em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #ffffff;
+}
+
+.header-nav-link:is(:hover, :focus) {
+  font-weight: 700;
+}
+
+.header-logo-wrapper {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.286;
+  letter-spacing: -0.035em;
+}
+
+.header-logo-icon {
+  fill: #77ac63;
+  margin-right: 8px;
+}
+
+.header-cart {
+  display: none;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.shopping-cart-icon {
+  fill: none;
+  stroke: #ffffff;
+}
+
+.hamburger-menu {
+  display: flex;
+  height: 24px;
+}
+
+/* .hamburger-menu-icon {
+  fill: #77ac63;
+} */
+
+/* fries menu button css */
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+label span {
+  background: #77ac63;
+  border-radius: 10px;
+  height: 2px;
+  margin: 2px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+  width: 50%;
+}
+
+span:nth-of-type(2) {
+  width: 100%;
+}
+
+span:nth-of-type(3) {
+  width: 66%;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox']:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(2.6px, 0.4px);
+}
+
+input[type='checkbox']:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+input[type='checkbox']:checked ~ span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(8.5px, -3px) rotatez(45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    position: fixed;
+    top: 50px;
+    left: 100vw;
+    transition: left var(--tran-250);
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color: var(--green-color);
+    z-index: 999;
+  }
+
+  .header-logo {
+    flex-basis: 33.3%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1280px;
+  }
+
+  .header-nav {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .header-nav-list {
+    flex-direction: row;
+    gap: 20px;
+    padding-top: unset;
+    text-align: center;
+  }
+
+  .header-nav-link {
+    transition: color var(--tran-250);
+    color: #141414;
+  }
+
+  .header-nav-link:is(:hover, :focus) {
+    color: #77ac63;
+    font-weight: unset;
+  }
+
+  .header-nav-item:last-child {
+    display: none;
+  }
+
+  .header-cart {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: end;
+  }
+
+  .shopping-cart-icon {
+    transition: stroke var(--tran-250);
+    fill: none;
+    stroke: var(--dark-color);
+  }
+
+  .shopping-cart-icon:is(:hover, :focus) {
+    stroke: #77ac63;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }
