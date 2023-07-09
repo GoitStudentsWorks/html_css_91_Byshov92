@@ -99,7 +99,6 @@
   .back-wrapper {
     display: flex;
     flex-direction: row-reverse;
-    padding-left: 0;
   }
 }
 
