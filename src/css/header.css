@@ -74,10 +74,6 @@
   padding: 2px;
 }
 
-/* .hamburger-menu-icon {
-  fill: #77ac63;
-} */
-
 /* fries menu button css */
 .hamburger {
   display: block;
@@ -141,7 +137,7 @@
   .header-nav {
     position: fixed;
     top: 50px;
-    left: 100vw;
+    left: 100%;
     transition: left var(--tran-250);
     width: 100vw;
     height: calc(100vh - 50px);
@@ -151,10 +147,6 @@
 
   .header-nav-item:not(:last-child) {
     margin-bottom: 16px;
-  }
-
-  .header-logo {
-    flex-basis: 33.3%;
   }
 }
 
