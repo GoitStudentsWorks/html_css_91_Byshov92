@@ -332,7 +332,7 @@ input {
     .modal-background {
         display: block;
         position: absolute;
-        bottom: -44px;
+        bottom: -40px;
         left: 374px;
         max-width: 290px;
         max-height: 403px;
