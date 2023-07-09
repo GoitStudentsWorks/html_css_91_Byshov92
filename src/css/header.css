@@ -1,3 +1,238 @@
-.header {
-  background-color: green;
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-nav.is-open {
+  left: 0;
+}
+
+.header-nav-list {
+  padding-top: 124px;
+  text-align: center;
+}
+
+.header-nav-link {
+  transition: font-weight var(--tran-250);
+  font-size: 14px;
+  line-height: 1.286;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+}
+
+.header-nav-link:is(:hover, :focus) {
+  font-weight: 700;
+}
+
+.header-logo-wrapper {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.286;
+  letter-spacing: -0.035em;
+}
+
+.header-logo-icon {
+  fill: #77ac63;
+  margin-right: 8px;
+}
+
+.header-cart {
+  display: none;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.shopping-cart-icon {
+  fill: none;
+  stroke: #ffffff;
+}
+
+.hamburger-menu {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+}
+
+/* .hamburger-menu-icon {
+  fill: #77ac63;
+} */
+
+/* fries menu button css */
+.hamburger {
+  display: block;
+  width: 24px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  z-index: 99;
+}
+
+.hamburger .bar,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #77ac63;
+  border-radius: 10px;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.hamburger .bar {
+  margin: 4px 0;
+  width: 100%;
+}
+
+.hamburger::before {
+  width: 50%;
+}
+
+.hamburger::after {
+  width: 66%;
+}
+
+.hamburger.is-open::before {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(2.6px, 0.4px);
+}
+
+.hamburger.is-open .bar {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+.hamburger.is-open::after {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(8.5px, -3px) rotatez(45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .header-nav {
+    position: fixed;
+    top: 50px;
+    left: 100vw;
+    transition: left var(--tran-250);
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color: var(--green-color);
+    z-index: 999;
+  }
+
+  .header-nav-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .header-logo {
+    flex-basis: 33.3%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+
+  .header-nav {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 14px;
+    padding-top: unset;
+    text-align: center;
+  }
+
+  .header-nav-link {
+    transition: color var(--tran-250);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #141414;
+  }
+
+  .header-nav-link:is(:hover, :focus) {
+    color: #77ac63;
+    font-weight: unset;
+  }
+
+  .header-nav-item:last-child {
+    display: none;
+  }
+
+  .header-cart {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: end;
+  }
+
+  .shopping-cart-icon {
+    transition: stroke var(--tran-250);
+    fill: none;
+    stroke: var(--dark-color);
+  }
+
+  .shopping-cart-icon:is(:hover, :focus) {
+    stroke: #77ac63;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .header-nav-list {
+    gap: 20px;
+  }
+
+  .button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .shopping-cart-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
