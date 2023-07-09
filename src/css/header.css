@@ -82,56 +82,65 @@
 } */
 
 /* fries menu button css */
-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.hamburger {
+  display: block;
   width: 20px;
-  height: 20px;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  z-index: 99;
 }
 
-label span {
-  background: #77ac63;
-  border-radius: 10px;
+.hamburger .bar,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
   height: 2px;
-  margin: 2px 0;
+  background-color: #77ac63;
+  border-radius: 10px;
   transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
-span:nth-of-type(1) {
-  width: 50%;
-}
-
-span:nth-of-type(2) {
+.hamburger .bar {
+  margin: 4px 0;
   width: 100%;
 }
 
-span:nth-of-type(3) {
+.hamburger::before {
+  width: 50%;
+}
+
+.hamburger::after {
   width: 66%;
 }
 
-input[type='checkbox'] {
-  display: none;
-}
-
-input[type='checkbox']:checked ~ span:nth-of-type(1) {
+.hamburger.is-open::before {
   transform-origin: bottom;
   transform: rotatez(45deg) translate(2.6px, 0.4px);
 }
 
-input[type='checkbox']:checked ~ span:nth-of-type(2) {
+.hamburger.is-open .bar {
   transform-origin: top;
   transform: rotatez(-45deg);
 }
 
-input[type='checkbox']:checked ~ span:nth-of-type(3) {
+.hamburger.is-open::after {
   transform-origin: bottom;
   width: 50%;
   transform: translate(8.5px, -3px) rotatez(45deg);
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+
   .header-nav {
     position: fixed;
     top: 50px;
@@ -152,7 +161,7 @@ input[type='checkbox']:checked ~ span:nth-of-type(3) {
   .container {
     padding-left: 32px;
     padding-right: 32px;
-    max-width: 1280px;
+    max-width: 768px;
   }
 
   .header-nav {
@@ -206,4 +215,7 @@ input[type='checkbox']:checked ~ span:nth-of-type(3) {
 }
 
 @media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
