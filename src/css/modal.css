@@ -180,6 +180,8 @@ input {
 
 
 .modal-form-input {
+    display: block;
+    padding: 0;
     width: 100%;
     border: none;
     outline: none;
@@ -221,6 +223,7 @@ input {
 }
 
 .modal-form-btn {
+    display: block;
     border: none;
     cursor: pointer;
     border-radius: 100px;
@@ -300,8 +303,9 @@ input {
     .modal-item {
         flex-direction: column;
         padding: 40px 7px 14px;
-        max-width: 200px;
+        width: calc((100% - 24px) / 3);
     }
+    
 
     .modal-item-img {
         align-self: center;
@@ -310,14 +314,19 @@ input {
 
     .item-text-container {
         margin-left: 20px;
+        margin-bottom: 6px;
     }
 
     .modal-form {
         width: 360px;
     }
+    .modal-form-label{
+        padding: 15px 24px;
+    }
 
     .modal-form-comment {
         height: 145px;
+        padding: 15px 24px;
     }
 
     .modal-form-btn {
@@ -333,7 +342,7 @@ input {
     .modal-background {
         display: block;
         position: absolute;
-        bottom: -40px;
+        bottom: -38px;
         left: 374px;
         max-width: 290px;
         max-height: 403px;
@@ -350,18 +359,27 @@ input {
 @media screen and (min-width: 1280px) {
     .modal {
         width: 891px;
-        max-height: 853px;
+        max-height: 911px;
         
+    }
+    .modal-list{
+        gap: 20px;
     }
 
     .modal-item {
         flex-direction: column;
         padding: 40px 7px 14px;
-        max-width: 257px;
+        width: calc((100% - 40px) / 3);
     }
-
+        .modal-item-text{
+        font-size: 24px;
+        line-height: 1.16;
+        }
+    .modal-item-img{
+        width: 100%;
+    }
     .modal-background {
-        display: block;
+        bottom: -34px;
         left: 399px;
         min-width: 444px;
         max-height: 410px;
