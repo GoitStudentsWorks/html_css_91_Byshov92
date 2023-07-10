@@ -41,6 +41,9 @@
     transform: translate(-50%, -50%);
     width: calc(100% - 30px);
     /* outline: 1px solid red; */
+    height: 903px;
+    max-height: 90vh;
+    overflow: auto;
     padding: 20px;
     border-radius: 20px;
     background-color: #fff;
@@ -230,12 +233,7 @@
 }
 
 /* media  */
-@media screen and (max-height: 903px) and (max-width: 375px ) {
-    .modal {
-        height: 100vh;
-        overflow: auto;
-    }
-}
+
 
 @media screen and (min-width: 375px) {
     .modal {
