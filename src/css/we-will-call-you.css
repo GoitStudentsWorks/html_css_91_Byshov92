@@ -3,7 +3,7 @@
   margin-bottom: 124px;
 }
 .container {
-  width: 100%;
+  /* width: 100%; */ /*Це закоментував тім лід*/
   /* max-width: 335px;
   padding-left: 20px;
   padding-right: 20px;
