@@ -6,6 +6,7 @@
   height: auto;
   padding: 80px 0;
   background-color: var(--light-green);
+
 }
 
 .footer-container {
@@ -13,7 +14,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 72px;
+  /* gap: 72px; */
 }
 
 .footer-section {
@@ -23,10 +24,10 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
 }
 
 .style-footer {
-  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
@@ -34,30 +35,35 @@
   color: var(--dark-color);
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 48px;
   margin-top: 20px;
   gap: 8px;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .footer-logo-ftr {
+
   list-style-type: none;
 }
 
-.footer-logo-link {
-}
+.footer-logo-link {}
 
 /*! footer menu */
 
 .footer-menu {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; */
+
 }
 
 .footer-menu-list {
   display: flex;
   gap: 20px;
   list-style-type: none;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   justify-content: center;
 }
 
@@ -68,7 +74,6 @@
 .footer-menu-link {
   color: var(--dark-color);
   text-align: center;
-  font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -83,6 +88,7 @@
   display: flex;
   gap: 8px;
   margin-bottom: 48px;
+  align-items: flex-start;
 }
 
 .footer-social-item {
@@ -99,40 +105,41 @@
   align-items: center;
   justify-content: center;
   transition: background-color var(--transition);
-  color: var(--color-black);
-  border: 1px solid var(--color-black);
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  border: 1px solid var(--color-picnic);
-  color: var(--color-picnic);
+  border: 1px solid var(--green-color);
+  color: var(--green-color);
 }
 
 .social-icons {
   fill: currentColor;
+
 }
 
 /*! footer address */
 
-.footer-address {
-}
+.footer-address {}
 
-.footer-address-list {
-}
+.footer-address-list {}
 
-.list {
-}
+
 
 .footer-address-item {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.36px;
 }
 
 .footer-address-contacts {
   color: #141414;
   text-decoration: none;
-  font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -156,109 +163,78 @@
 }
 
 @media (max-width: 375px) {
-  .menu {
+  .body {
     display: none;
   }
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
-  .menu {
+  .body {
     display: none;
   }
 }
 
 /*! Футер */
+
 @media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
 
   .footer-container {
     flex-direction: column;
-    gap: 72px 24px;
+    /* gap: 72px 24px; */
     flex-wrap: wrap;
   }
 
   .footer-container-ftr {
     display: flex;
-    align-items: baseline;
-    gap: 24px;
+    /* align-items: baseline; */
+    /* gap: 24px; */
   }
 
   .footer-section {
-    text-align: left;
+    margin: 80px 0;
+    margin-right: 171px;
   }
 
   .footer-social-section {
-    margin-top: 0;
+    margin-top: 77.48px;
+    margin-bottom: 155px;
   }
 
-  /*! Футер форм */
-  .footer-form-text {
+  .footer-address-link {
     text-align: left;
-  }
-
-  .footer-form-form {
-    flex-direction: row;
-    gap: 24px;
-  }
-
-  .footer-input {
-    width: 264px;
   }
 }
 
 /*! Media */
 
 @media (min-width: 1280px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 21px;
-  }
+
 
   .footer-container {
     max-width: 100%;
     flex-direction: row;
     gap: 25px;
-    flex-wrap: wrap;
-    /* justify-content: baseline; */
-    align-items: baseline;
+
   }
 
   .footer-container-ftr {
     display: flex;
-    align-items: baseline;
-    gap: 120px;
-  }
-
-  .footer-social-text {
-    text-align: left;
-  }
-
-  .footer-section {
-    text-align: left;
+    /* align-items: baseline; */
+    gap: 166px;
   }
 
   .footer-social-section {
-    margin-top: 0;
+    margin-top: 80px;
+
   }
 
-  .footer-form-text {
-    text-align: left;
-  }
-
-  .footer-form-form {
+  .footer-section {
     flex-direction: row;
-    gap: 24px;
+    gap: 166px;
   }
 
-  .footer-input {
-    width: 264px;
-  }
 }
 
-@media (min-width: 1212px) {
-  .footer-container {
-    gap: 80px;
-  }
+@media (min-width: 1280px) {
+  .footer-container {}
 }
