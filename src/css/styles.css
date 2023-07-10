@@ -18,10 +18,10 @@
 /* regular font */
 @font-face {
   font-family: 'DMSans';
-  src: url('./fonts/DMSans-Regular.eot');
-  src: url('./fonts/DMSans-Regular.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/DMSans-Regular.woff2') format('woff2'),
-    url('./fonts/DMSans-Regular.woff') format('woff');
+  src: url('../fonts/DMSans-Regular.eot');
+  src: url('../fonts/DMSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DMSans-Regular.woff2') format('woff2'),
+    url('../fonts/DMSans-Regular.woff') format('woff');
   font-style: normal;
   font-weight: 400;
 }
@@ -29,10 +29,10 @@
 /* italic font */
 @font-face {
   font-family: 'DMSans';
-  src: url('./fonts/DMSans-Italic.eot');
-  src: url('./fonts/DMSans-Italic.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/DMSans-Italic.woff2') format('woff2'),
-    url('./fonts/DMSans-Italic.woff') format('woff');
+  src: url('../fonts/DMSans-Italic.eot');
+  src: url('../fonts/DMSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DMSans-Italic.woff2') format('woff2'),
+    url('../fonts/DMSans-Italic.woff') format('woff');
   font-style: italic;
   font-weight: 400;
 }
@@ -40,10 +40,10 @@
 /* medium font */
 @font-face {
   font-family: 'DMSans';
-  src: url('./fonts/DMSans-Medium.eot');
-  src: url('./fonts/DMSans-Medium.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/DMSans-Medium.woff2') format('woff2'),
-    url('./fonts/DMSans-Medium.woff') format('woff');
+  src: url('../fonts/DMSans-Medium.eot');
+  src: url('../fonts/DMSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DMSans-Medium.woff2') format('woff2'),
+    url('../fonts/DMSans-Medium.woff') format('woff');
   font-style: normal;
   font-weight: 500;
 }
@@ -51,10 +51,11 @@
 /* medium italic font */
 @font-face {
   font-family: 'DMSans';
-  src: url('./fonts/DMSans-MediumItalic.eot');
-  src: url('./fonts/DMSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/DMSans-MediumItalic.woff2') format('woff2'),
-    url('./fonts/DMSans-MediumItalic.woff') format('woff');
+  src: url('../fonts/DMSans-MediumItalic.eot');
+  src: url('../fonts/DMSans-MediumItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/DMSans-MediumItalic.woff2') format('woff2'),
+    url('../fonts/DMSans-MediumItalic.woff') format('woff');
   font-style: italic;
   font-weight: 500;
 }
@@ -62,10 +63,10 @@
 /* bold font */
 @font-face {
   font-family: 'DMSans';
-  src: url('./fonts/DMSans-Bold.eot');
-  src: url('./fonts/DMSans-Bold.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/DMSans-Bold.woff2') format('woff2'),
-    url('./fonts/DMSans-Bold.woff') format('woff');
+  src: url('../fonts/DMSans-Bold.eot');
+  src: url('../fonts/DMSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DMSans-Bold.woff2') format('woff2'),
+    url('../fonts/DMSans-Bold.woff') format('woff');
   font-style: normal;
   font-weight: 700;
 }
@@ -73,25 +74,15 @@
 /* bold italic font */
 @font-face {
   font-family: 'DMSans';
-  src: url('./fonts/DMSans-BoldItalic.eot');
-  src: url('./fonts/DMSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/DMSans-BoldItalic.woff2') format('woff2'),
-    url('./fonts/DMSans-BoldItalic.woff') format('woff');
+  src: url('../fonts/DMSans-BoldItalic.eot');
+  src: url('../fonts/DMSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DMSans-BoldItalic.woff2') format('woff2'),
+    url('../fonts/DMSans-BoldItalic.woff') format('woff');
   font-style: italic;
   font-weight: 700;
 }
 
 :root {
-  font-family: 'DMSans', 'Avenir', 'Helvetica', 'Arial', sans-serif;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
-  color: var(--dark-color);
-  background-color: #ffffff;
-
   /* ===== colors ===== */
   --dark-color: #141414;
   --green-color: #a1c487;
@@ -102,6 +93,26 @@
 
   /* ===== transitions ===== */
   --tran-250: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: DMSans, Arial, Helvetica, sans-serif;
+
+  color: var(--dark-color);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
