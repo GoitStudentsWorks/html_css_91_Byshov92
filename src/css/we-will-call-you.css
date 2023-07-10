@@ -58,9 +58,7 @@
 .wewill-input::placeholder {
   padding-left: 24px;
 }
-.wewill-image {
-  /* width: 525px; */
-  /* height: 388px; */
+.wewill-img {
   border-radius: 40px;
   background: var(--beige) repeat;
   background-image: radial-gradient(
@@ -69,7 +67,6 @@
     transparent 0
   );
   background-size: 61px 60px;
-  /* margin-left: 77px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -80,8 +77,6 @@
     margin-top: 100px;
     margin-bottom: 173px;
   }
-  .wewill-box {
-  }
 }
 @media screen and (min-width: 1280px) {
   .container {
@@ -90,8 +85,5 @@
   .wewill {
     margin-top: 124px;
     margin-bottom: 124px;
-  }
-  .wewill-box {
-    display: flex;
   }
 }
