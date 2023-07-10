@@ -247,7 +247,7 @@ input {
 }
 
 /* media  */
-@media screen and (max-height: 903px) {
+@media screen and (max-height: 903px) and (max-width: 375px ) {
     .modal {
         height: 100vh;
         overflow: auto;
