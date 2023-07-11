@@ -72,7 +72,7 @@
 /**-------------------------AMEDIA------------------------------------**/
 @media screen and (min-width: 375px) {
   .container {
-    max-width: 375px;
+    width: 375px; /* це виправив тім лід*/
   }
 }
 
