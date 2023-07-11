@@ -1,10 +1,8 @@
 /*! Логотип у футері */
 
 .footer {
-  position: relative;
   max-width: 100%;
   height: auto;
-  padding: 80px 0;
   background-color: var(--light-green);
 }
 
@@ -13,7 +11,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 72px;
+  padding: 80px 0;
 }
 
 .footer-section {
@@ -26,7 +24,6 @@
 }
 
 .style-footer {
-  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
@@ -34,30 +31,25 @@
   color: var(--dark-color);
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 48px;
   margin-top: 20px;
   gap: 8px;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .footer-logo-ftr {
   list-style-type: none;
-}
-
-.footer-logo-link {
+  padding-bottom: 20px;
 }
 
 /*! footer menu */
-
-.footer-menu {
-}
 
 .footer-menu-list {
   display: flex;
   gap: 20px;
   list-style-type: none;
-  margin-bottom: 48px;
+  padding-bottom: 40px;
   justify-content: center;
 }
 
@@ -68,7 +60,6 @@
 .footer-menu-link {
   color: var(--dark-color);
   text-align: center;
-  font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -82,7 +73,8 @@
   justify-content: center;
   display: flex;
   gap: 8px;
-  margin-bottom: 48px;
+  padding-bottom: 40px;
+  align-items: flex-start;
 }
 
 .footer-social-item {
@@ -99,40 +91,34 @@
   align-items: center;
   justify-content: center;
   transition: background-color var(--transition);
-  color: var(--color-black);
-  border: 1px solid var(--color-black);
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  border: 1px solid var(--color-picnic);
-  color: var(--color-picnic);
+  border: 1px solid var(--green-color);
+  color: var(--green-color);
 }
 
 .social-icons {
   fill: currentColor;
+
 }
 
 /*! footer address */
 
-.footer-address {
-}
-
-.footer-address-list {
-}
-
-.list {
-}
-
 .footer-address-item {
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.36px;
 }
 
 .footer-address-contacts {
   color: #141414;
   text-decoration: none;
-  font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -141,7 +127,7 @@
 }
 
 .footer-address-link {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .footer-address-position {
@@ -153,112 +139,80 @@
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.28px;
+  white-space: pre-line;
 }
 
 @media (max-width: 375px) {
-  .menu {
-    display: none;
+  .footer {
+    max-width: 375px;
+    height: 640px;
+    display: flex;
   }
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
-  .menu {
-    display: none;
+@media (min-width: 376px) and (max-width: 767px) {
+  .footer {
+    max-width: 767px;
+    height: 100%;
+    display: flex;
+  }
+
+  .footer-address-link {
+    text-align: left;
   }
 }
 
 /*! Футер */
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
 
+@media (min-width: 768px) {
   .footer-container {
     flex-direction: column;
-    gap: 72px 24px;
     flex-wrap: wrap;
   }
 
   .footer-container-ftr {
     display: flex;
-    align-items: baseline;
-    gap: 24px;
   }
 
   .footer-section {
-    text-align: left;
+    padding: 80px 0;
   }
 
   .footer-social-section {
-    margin-top: 0;
+    padding: 80px 32px 152px 170px;
   }
 
-  /*! Футер форм */
-  .footer-form-text {
-    text-align: left;
-  }
-
-  .footer-form-form {
-    flex-direction: row;
-    gap: 24px;
-  }
-
-  .footer-input {
-    width: 264px;
+  .footer-address-item {
+    text-align-last: left;
   }
 }
 
 /*! Media */
 
 @media (min-width: 1280px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 21px;
-  }
-
   .footer-container {
     max-width: 100%;
+    height: auto;
     flex-direction: row;
-    gap: 25px;
-    flex-wrap: wrap;
-    /* justify-content: baseline; */
-    align-items: baseline;
   }
 
   .footer-container-ftr {
     display: flex;
-    align-items: baseline;
-    gap: 120px;
-  }
-
-  .footer-social-text {
-    text-align: left;
-  }
-
-  .footer-section {
-    text-align: left;
+    gap: 166px;
   }
 
   .footer-social-section {
-    margin-top: 0;
+    padding: 80px 142px 97px 0;
   }
 
-  .footer-form-text {
-    text-align: left;
-  }
-
-  .footer-form-form {
+  .footer-section {
     flex-direction: row;
-    gap: 24px;
+    gap: 166px;
   }
 
-  .footer-input {
-    width: 264px;
-  }
-}
+  .footer-address {}
 
-@media (min-width: 1212px) {
-  .footer-container {
-    gap: 80px;
+  .footer-address-item {
+    text-align-last: left;
   }
 }
