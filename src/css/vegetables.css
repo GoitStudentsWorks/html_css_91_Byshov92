@@ -160,7 +160,7 @@
 }
 @media screen and (min-width: 768px) {
   .veg-item {
-    padding: 64px 10px 24px 24px;
+    padding: 64px 24px 24px 24px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -181,5 +181,39 @@
 @media screen and (min-width: 1280px) {
   .veg-pic {
     margin-bottom: 23px;
+  }
+}
+.pic-height {
+  height: 249px;
+}
+@media screen and (min-width: 768px) {
+  .veg-pic {
+    height: 261px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .veg-pic {
+    margin-bottom: 23px;
+  }
+}
+.pic-height {
+  height: 249px;
+}
+@media screen and (min-width: 768px) {
+  .veg-pic {
+    height: 261px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .veg-pic {
+    margin-bottom: 23px;
+  }
+}
+.pic-height {
+  height: 249px;
+}
+@media screen and (min-width: 768px) {
+  .veg-pic {
+    height: 261px;
   }
 }
