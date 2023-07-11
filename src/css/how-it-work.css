@@ -1,29 +1,111 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>General<<<<<<<<<<<<<<<<<<< */
 
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
+.howit {
+  padding-top: 80px;
+
 }
 
 @media screen and (min-width: 375px) {
-  .container {
+  .howit {
     width: 375px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .howit {
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-top: 100px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
+  .howit {
+    max-width: 1280px;
+    padding-top: 124px;
+  }
+}
+
+.how-title {
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  letter-spacing: -1.12px;
+}
+
+.how-broc {
+  margin-bottom: 20px;
+}
+
+.how-text-wrapper {
+  margin-bottom: 80px;
+}
+
+.how-text {
+  font-size: 14px;
+  line-height: 1.23;
+  letter-spacing: -0.56px;
+}
+
+.how-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-wrapper {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .how-title {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    max-width: 386px;
+    letter-spacing: -1.6px;
+  }
+
+  .how-broc {
+    margin-bottom: 40px;
+  }
+
+  .how-text-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 100px;
+  }
+
+  .how-text {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+    max-width: 317px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .how-title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.04;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    max-width: 614px;
+  }
+
+  .how-text-wrapper {
+    gap: 40px;
+    margin-bottom: 124px;
+  }
+
+  .how-text {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
   }
 }
 
@@ -57,9 +139,11 @@
 }
 
 .howit-title {
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.16;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
   margin-bottom: 40px;
 }
 
@@ -81,9 +165,9 @@
 .howit-desc {
   display: flex;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  width: 194px;
+  line-height: 1.23;
+  letter-spacing: -0.56px;
+  max-width: 194px;
   height: 54px;
   align-items: center;
 }
@@ -115,11 +199,18 @@
 
   .howit-title {
     font-size: 28px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 1.14;
+    letter-spacing: -1.12px;
     width: 274px;
     margin: 0;
+  }
+
+  .howit-desc {
+    font-size: 14px;
+    line-height: 1.23;
+    letter-spacing: -0.56px;
+    max-width: 176px;
   }
 }
 
@@ -134,13 +225,16 @@
 
   .howit-title {
     font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 44px;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
     width: 512px;
   }
 
   .howit-desc {
-    width: 308px;
+    font-size: 14px;
+    line-height: 1.23;
+    letter-spacing: -0.56px;
+    max-width: 289px;
   }
 }

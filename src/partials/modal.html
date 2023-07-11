@@ -1,3 +1,141 @@
-<section class="modal">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quia doloribus sit! Distinctio suscipit excepturi sit rem minus! Officiis quod doloribus odio aut esse repellendus itaque fuga repellat est. Officiis!</p>
-</section>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <h2 class="modal-title">Your Order</h2>
+    <button class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/img/symbol-defs.svg#close-btn"></use>
+      </svg>
+    </button>
+    <ul class="modal-list list">
+      <li class="modal-item">
+        <div class="item-text-container">
+          <p class="modal-item-text">Cabbage Basket</p>
+          <span class="modal-item-description">Plant</span>
+        </div>
+        <img
+          class="modal-item-img"
+          srcset="/img/cabbage-busket.png 1x, /img/cabbage-busket-2x.png 2x"
+          src="/img/cabbage-busket.png"
+          alt="Cabbage in basket"
+          width="94"
+          height="78"
+        />
+        <label class="modal-check-label">
+          <input
+            class="modal-item-check visually-hidden"
+            type="checkbox"
+            name="choise"
+            value="cabbage-busket"
+          />
+          <span class="modal-fake-check"
+            ><svg class="modal-check-icon" width="8" height="8">
+              <use href="./img/symbol-defs.svg#checked"></use></svg></span>
+        </label>
+      </li>
+      <li class="modal-item">
+        <div class="item-text-container">
+          <p class="modal-item-text">Tomato Basket</p>
+          <span class="modal-item-description">Plant</span>
+        </div>
+        <img
+          class="modal-item-img"
+          srcset="./img/tomato-basket.png 1x, ./img/tomato-basket-2x.png 2x"
+          src="/img/tomato-basket.png"
+          alt="Tomato in basket"
+          width="94"
+          height="78"
+        />
+        <label class="modal-check-label">
+          <input
+            class="modal-item-check visually-hidden"
+            type="checkbox"
+            name="choise"
+            value="tomato-basket"
+          />
+        <span class="modal-fake-check"><svg class="modal-check-icon" width="8" height="8">
+                <use href="./img/symbol-defs.svg#checked"></use>
+            </svg></span>
+        </label>
+      </li>
+      <li class="modal-item">
+        <div class="item-text-container">
+          <p class="modal-item-text">Vegetables Basket</p>
+          <span class="modal-item-description">Plant</span>
+        </div>
+        <img
+          class="modal-item-img"
+          srcset="
+            /img/vegetables-basket.png    1x,
+            /img/vegetables-basket-2x.png 2x
+          "
+          src="/img/vegetables-basket.png"
+          alt="Vegetables in basket"
+          width="94"
+          height="78"
+        />
+        <label class="modal-check-label">
+          <input
+            class="modal-item-check visually-hidden"
+            type="checkbox"
+            name="choise"
+            value="vegetables-basket"
+          />
+        <span class="modal-fake-check"><svg class="modal-check-icon" width="8" height="8">
+                <use href="./img/symbol-defs.svg#checked"></use>
+            </svg></span>
+        </label>
+      </li>
+    </ul>
+    <form class="modal-form">
+      <label class="modal-form-label" 
+        ><input
+          class="modal-form-input"
+          type="text"
+          name="user-name"
+          minlength="4"
+          maxlength="20"
+          pattern="[a-zA-Z]+"
+          required
+          placeholder="Enter full name..."
+      /></label>
+      <label class="modal-form-label" 
+        ><input
+          class="modal-form-input"
+          type="email"
+          name="user-email"
+          required
+          placeholder="Enter email..."
+      /></label>
+      <label class="modal-form-label" 
+        ><input
+          class="modal-form-input"
+          type="text"
+          minlength="16"
+          maxlength="16"
+          pattern="[0-9]+"
+          name="user-card-number"
+          required
+          placeholder="Enter card.."
+      /></label>
+      <textarea
+        class="modal-form-comment"
+        name="comment"
+        placeholder="Enter comments..."
+      ></textarea>
+      <button class="modal-form-btn" type="submit">Submit</button>
+    </form>
+    <!-- THIS div using for absolute position bakground -->
+    <div class="for-pos">
+      <div class="modal-background">
+        <img
+          class="modal-background-image"
+          srcset="./img/modal-pic.png 1x, ./img/modal-pic-2x.png 2x"
+          src="./img/modal-pic.png"
+          alt="Girl with vegetables"
+          width="444"
+          height="413"
+        />
+      </div>
+    </div>
+  </div>
+</div>

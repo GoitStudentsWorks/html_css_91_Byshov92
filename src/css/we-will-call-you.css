@@ -1,87 +1,189 @@
 .wewill {
-  margin-top: 124px;
-  margin-bottom: 124px;
-}
-.container {
-  width: 100%;
-  max-width: 1280px;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin: 0 auto;
-}
-.wewill-box {
-  display: flex;
-}
-.wewill-content {
-  width: 614px;
-  height: 340px;
-  margin: auto;
-}
-.wewill-title {
-  width: 614px;
-  color: var(--dark-color);
-  font-family: DM Sans;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.04;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-.wewill-text {
-  color: var(--dark-color);
-  font-family: DM Sans;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.33;
-  width: 523px;
   margin-bottom: 80px;
 }
 
-.wewill-input {
+.wewill-title {
+  width: 323px;
+  color: var(--dark-color);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: ;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wewill-text {
+  width: 321px;
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  margin-bottom: 40px;
+}
+.wewill-form {
   position: relative;
-  width: 100%;
-  max-width: 350px;
-  height: 48px;
+  max-width: 100%;
+}
+.wewill-label {
+  display: block;
   border-radius: 100px;
-  border: 1px solid #c1bdbd;
+  border: 1px solid var(--dark-color);
   opacity: 0.30000001192092896;
+  padding: 15px 115px 15px 24px;
+  margin-bottom: 40px;
 }
-.wewill-input::placeholder {
-  font-family: DM Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.28;
-  padding-left: 24px;
-}
+
 .wewill-btn {
+  display: block;
+  height: 100%;
   position: absolute;
-  left: 280px;
-  width: 105px;
+  bottom: 0;
+  right: 0;
   padding: 15px 35px;
-  font-family: DM Sans;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.28;
+  letter-spacing: -0.56px;
   text-transform: capitalize;
-  border-radius: 100%;
   color: #ffffff;
+  border-radius: 100px;
   background: var(--orange);
   border: none;
-  cursor: pointer;
 }
-.wewill-image {
-  width: 525px;
-  border-radius: 80px;
+
+.wewill-input::placeholder {
+  padding-left: 24px;
+}
+.wewill-images {
+  width: 335px;
+  height: 388px;
+  border-radius: 40px;
   background: var(--beige) repeat;
   background-image: radial-gradient(
     circle at 30px 20px,
-    rgba(161, 196, 135, 0.69) 5px,
+    rgba(161, 196, 135, 0.3) 2.5px,
     transparent 0
   );
-  background-size: 55px 65px;
-  margin-left: 77px;
+  background-size: 61px 60px;
+}
+.wewill-img {
+  margin: auto;
+}
+/**-------------------------AMEDIA------------------------------------**/
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px; /* це виправив тім лід*/
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .wewill {
+    margin-bottom: 173px;
+  }
+  .wewill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wewill-title {
+    width: 524px;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .wewill-text {
+    width: 499px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+    margin-bottom: 40px;
+  }
+  .wewill-form {
+    max-width: 350px;
+  }
+  .wewill-label {
+    width: 100%;
+    max-width: 350px;
+    height: 48px;
+  }
+
+  .wewill-images {
+    width: 704px;
+    height: 463px;
+    border-radius: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+  .wewill {
+    margin-bottom: 124px;
+  }
+  .wewill-box {
+    display: flex;
+    flex-direction: row;
+  }
+  .wewill-box-2 {
+    width: 614px;
+    height: 340px;
+    margin: auto;
+  }
+  .wewill-title {
+    width: 614px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.04;
+    text-align: inherit;
+    margin-bottom: 40px;
+  }
+
+  .wewill-text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.33;
+    width: 523px;
+    margin-bottom: 80px;
+  }
+
+  .wewill-images {
+    width: 100%;
+    max-width: 525px;
+    height: 536px;
+    border-radius: 80px;
+    background: var(--beige) repeat;
+    background-image: radial-gradient(
+      circle at 30px 20px,
+      rgba(161, 196, 135, 0.3) 2.5px,
+      transparent 0
+    );
+    background-size: 62px 60px;
+    margin-left: 77px;
+  }
+  .wewill-form {
+    max-width: 350px;
+  }
+  .wewill-label {
+    width: 100%;
+    max-width: 350px;
+    height: 48px;
+  }
+  .wewill-btn {
+  }
 }

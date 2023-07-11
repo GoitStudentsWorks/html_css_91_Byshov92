@@ -108,6 +108,21 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.container {
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+  .container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+}
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
