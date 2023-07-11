@@ -168,6 +168,12 @@ text-transform: uppercase;
 /*-----------------MEDIA----------------*/
 @media screen and (min-width: 768px) {
    .hero-container {
+      max-width: 375px;  
+     
+   }
+}
+@media screen and (min-width: 768px) {
+   .hero-container {
       max-width: 768px;  
       padding: 66px 32px 32px 32px;    
    }
