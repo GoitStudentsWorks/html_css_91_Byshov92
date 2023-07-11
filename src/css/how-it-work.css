@@ -1,32 +1,26 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>General<<<<<<<<<<<<<<<<<<< */
 
-.how-container {
-  padding-left: 20px;
-  padding-right: 20px;
+.howit {
   padding-top: 80px;
+
 }
 
 @media screen and (min-width: 375px) {
-  .how-container {
+  .howit {
     width: 375px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 80px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .how-container {
+  .howit {
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
     padding-top: 100px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .how-container {
-    width: 1280px;
+  .howit {
+    max-width: 1280px;
     padding-top: 124px;
   }
 }
@@ -127,7 +121,6 @@
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 80px;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>Mobile<<<<<<<<<<<<<<<<<<<<<<< */
@@ -194,7 +187,6 @@
     padding-right: 40px;
     padding-top: 80px;
     gap: 40px;
-    margin-bottom: 101px;
   }
 
   .howit-list-block {
@@ -229,7 +221,6 @@
     width: 1216px;
     justify-content: center;
     gap: 110px;
-    margin-bottom: 124px;
   }
 
   .howit-title {
