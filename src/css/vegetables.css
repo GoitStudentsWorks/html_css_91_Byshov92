@@ -1,5 +1,4 @@
 .vegetables {
-  margin-top: 80px;
   margin-bottom: 80px;
 }
 .veg-container {
@@ -91,14 +90,17 @@
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.28px;
+  margin-bottom: 36px;
 }
 @media screen and (min-width: 768px) {
   .veg-kind {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.36px;
+    margin-bottom: 7px;
   }
 }
+
 .veg-weight {
   color: #141414;
   font-weight: 500;
@@ -151,23 +153,33 @@
   }
 }
 .veg-item {
-  padding: 40px 25px 20px 20px;
+  padding: 40px 18px 20px 18px;
   background-color: var(--light-green);
   border-radius: 20px;
+  width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .veg-item {
+    padding: 64px 10px 24px 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .veg-item {
+    padding: 64px 34px 24px 24px;
+  }
+}
+
 .veg-pic {
-  margin: 0;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin: 0 auto;
   margin-bottom: 22px;
 }
 @media screen and (min-width: 768px) {
   .veg-pic {
-    margin-bottom: 21px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1280px) {
   .veg-pic {
-    margin-bottom: 29px;
+    margin-bottom: 23px;
   }
 }
