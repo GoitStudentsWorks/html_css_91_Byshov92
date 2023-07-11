@@ -41,6 +41,9 @@
     transform: translate(-50%, -50%);
     width: calc(100% - 30px);
     /* outline: 1px solid red; */
+    height: 903px;
+    max-height: 90vh;
+    overflow: auto;
     padding: 20px;
     border-radius: 20px;
     background-color: #fff;
@@ -230,12 +233,7 @@
 }
 
 /* media  */
-@media screen and (max-height: 903px) and (max-width: 375px ) {
-    .modal {
-        height: 100vh;
-        overflow: auto;
-    }
-}
+
 
 @media screen and (min-width: 375px) {
     .modal {
@@ -249,7 +247,9 @@
 
 @media screen and (min-width: 768px) {
     .modal {
-        max-height: 853px;
+        height: 853px;
+        max-height: 90vh;
+        overflow: auto;
         width: 704px;
         padding: 40px;
         
@@ -325,7 +325,7 @@
     .modal-background {
         display: block;
         position: absolute;
-        bottom: -38px;
+        bottom: -40px;
         left: 374px;
         max-width: 290px;
         max-height: 403px;
@@ -342,7 +342,9 @@
 @media screen and (min-width: 1280px) {
     .modal {
         width: 891px;
-        max-height: 911px;
+        height: 911px;
+        max-height: 90vh;
+        overflow: auto;
         
     }
     .modal-list{
@@ -362,7 +364,7 @@
         width: 100%;
     }
     .modal-background {
-        bottom: -34px;
+        bottom: -40px;
         left: 399px;
         min-width: 444px;
         max-height: 410px;
