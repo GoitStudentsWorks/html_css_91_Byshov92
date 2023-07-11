@@ -3,6 +3,7 @@
 .how-container {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 80px;
 }
 
 @media screen and (min-width: 375px) {
@@ -10,6 +11,7 @@
     width: 375px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 80px;
   }
 }
 
@@ -18,12 +20,14 @@
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+    padding-top: 100px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .how-container {
     width: 1280px;
+    padding-top: 124px;
   }
 }
 
