@@ -140,10 +140,10 @@ height: 228px;
 .hero-list-nav{
    display: flex;
    gap: 4px;
-   width: 171px;
+   width: 175px;
    flex-wrap: wrap;
    margin-left: auto;
-   justify-content: end;;
+   justify-content: end;
 }
 .hero-nav-item{
    padding: 8px 14px;
