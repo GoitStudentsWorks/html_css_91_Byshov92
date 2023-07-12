@@ -6,7 +6,8 @@
       let scrollDiv = document.getElementById(
         `${anchor.getAttribute('data-value')}`
       ).offsetTop;
+
+      window.scrollTo({ top: scrollDiv, behavior: 'smooth' });
     });
-    window.scrollTo({ top: scrollDiv, behavior: 'smooth' });
   });
 })();
