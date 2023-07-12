@@ -318,8 +318,7 @@
 
     .for-pos {
         position: relative;
-        height: 0px;
-        width: 0px;
+        
     }
 
     .modal-background {
@@ -327,14 +326,11 @@
         position: absolute;
         bottom: -40px;
         left: 374px;
-        max-width: 290px;
-        max-height: 403px;
-        overflow: hidden;
+        width: 290px;
     }
 
     .modal-background-image {
-        min-width: 444px;
-        min-height: 413px;
+        max-height: 100%;
     }
 }
 
@@ -366,7 +362,7 @@
     .modal-background {
         bottom: -40px;
         left: 399px;
-        min-width: 444px;
-        max-height: 410px;
+        width: 435px;
+        
     }
 }
