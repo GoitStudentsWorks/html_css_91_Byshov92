@@ -1,8 +1,7 @@
 .wewill {
   margin-bottom: 80px;
 }
-.wewill-box-2 {
-}
+
 .wewill-title {
   /* width: 323px; */
   color: var(--dark-color);
@@ -93,11 +92,11 @@
   .wewill {
     margin-bottom: 173px;
   }
-  .wewill-box {
+  /* .wewill-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
   .wewill-title {
     width: 524px;
