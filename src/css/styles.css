@@ -14,6 +14,7 @@
 @import url('./we-will-call-you.css');
 @import url('./footer.css');
 @import url('./modal.css');
+@import url('./to-top-btn.css');
 
 /* regular font */
 @font-face {
@@ -109,10 +110,29 @@ body {
 }
 
 .container {
-
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 .visually-hidden {

@@ -1,11 +1,11 @@
-<section class="vegetables">
+<section class="vegetables" id="vegetables">
   <div class="veg-container">
-    <h1 class="veg-main">organic vegetables</h1>
-    <h2 class="veg-text">
+    <h2 class="veg-main">organic vegetables</h2>
+    <p class="veg-text">
       Our organic vegetables are hand-picked from local farms and delivered
       straight to your doorstep, ensuring that you get the freshest and most
       nutritious produce possible.
-    </h2>
+    </p>
     <div class="veg-set">
       <ul class="veg-cards">
         <li class="veg-card">
@@ -157,7 +157,11 @@
         </li>
       </ul>
     </div>
-
-    <button type="button" class="veg-button">order</button>
+    <button type="button" class="vegetables-button" data-modal-open>
+      <svg class="veg-button-svg" width="14" height="14">
+        <use href="./img/symbol-defs.svg#arrow"></use>
+      </svg>
+      ORDER
+    </button>
   </div>
 </section>

@@ -1,0 +1,43 @@
+.to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  fill: #ffffff;
+  background-color: var(--orange);
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity var(--tran-250), animation 400ms ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+  .to-top-button {
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.to-top-button.show {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.to-top-button:hover {
+  opacity: 1;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -51,6 +51,7 @@
   list-style-type: none;
   padding-bottom: 40px;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-menu-item {
@@ -72,7 +73,7 @@
 .footer-social-list {
   justify-content: center;
   display: flex;
-  gap: 8px;
+  gap: 20px;
   padding-bottom: 40px;
   align-items: flex-start;
 }
@@ -133,7 +134,6 @@
 .footer-address-position {
   color: #141414;
   text-align: center;
-  font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -179,11 +179,23 @@
   }
 
   .footer-social-section {
-    padding: 80px 32px 152px 170px;
+    margin: 80px 32px 152px 170px;
   }
 
   .footer-address-item {
     text-align-last: left;
+  }
+
+  .footer-address-contacts {
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+  }
+
+  .footer-address-position {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.36px;
   }
 }
 
@@ -198,11 +210,11 @@
 
   .footer-container-ftr {
     display: flex;
-    gap: 166px;
+
   }
 
   .footer-social-section {
-    padding: 80px 142px 97px 0;
+    margin: 80px 139px 97px 166px;
   }
 
   .footer-section {
@@ -214,5 +226,19 @@
 
   .footer-address-item {
     text-align-last: left;
+    font-size: 18px;
+  }
+
+  .footer-address-link {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .footer-address-contacts {
+    text-transform: uppercase;
+  }
+
+  .footer-address-position {
+    letter-spacing: -0.36px;
   }
 }
