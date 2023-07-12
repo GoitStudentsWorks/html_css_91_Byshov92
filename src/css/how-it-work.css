@@ -5,15 +5,9 @@
   padding-bottom: 80px;
 }
 
-@media screen and (min-width: 375px) {
-  .howit {
-    width: 375px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .howit {
-    width: 768px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -21,7 +15,6 @@
 
 @media screen and (min-width: 1280px) {
   .howit {
-    max-width: 1280px;
     padding-top: 124px;
     padding-bottom: 124px;
   }
