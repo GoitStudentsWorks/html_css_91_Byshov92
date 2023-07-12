@@ -1,5 +1,5 @@
 (() => {
-  const anchors = document.querySelectorAll('a[href*="#"]');
+  const anchors = document.querySelectorAll('.anchor');
 
   anchors.forEach(anchor => {
     anchor.addEventListener('click', () => {
@@ -7,7 +7,11 @@
         `${anchor.getAttribute('data-value')}`
       ).offsetTop;
 
-      window.scrollTo({ top: scrollDiv, behavior: 'smooth' });
+      if (anchor.getAttribute('data-value') === 'vegetables') {
+        window.scrollTo({ top: scrollDiv - 40, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: scrollDiv, behavior: 'smooth' });
+      }
     });
   });
 })();
