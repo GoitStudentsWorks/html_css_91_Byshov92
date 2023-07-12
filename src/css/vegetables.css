@@ -1,5 +1,18 @@
 .vegetables {
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+  .vegetables {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .vegetables {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
 }
 .veg-container {
   min-width: 320px;
