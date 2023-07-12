@@ -1,9 +1,10 @@
 .wewill {
   margin-bottom: 80px;
 }
-
+.wewill-box-2 {
+}
 .wewill-title {
-  width: 323px;
+  /* width: 323px; */
   color: var(--dark-color);
   font-size: 24px;
   font-weight: 500;
@@ -15,7 +16,7 @@
 }
 
 .wewill-text {
-  width: 321px;
+  /* width: 321px; */
   color: var(--dark-color);
   text-align: center;
   font-size: 14px;
@@ -28,6 +29,7 @@
 .wewill-form {
   position: relative;
   max-width: 100%;
+  margin: auto;
 }
 .wewill-label {
   display: block;
@@ -60,8 +62,8 @@
   padding-left: 24px;
 }
 .wewill-images {
-  width: 335px;
-  height: 388px;
+  width: 100%;
+  max-width: 335px;
   border-radius: 40px;
   background: var(--beige) repeat;
   background-image: radial-gradient(
@@ -78,6 +80,12 @@
 @media screen and (min-width: 375px) {
   .container {
     width: 375px; /* це виправив тім лід*/
+  }
+  .wewill-title {
+    width: 323px;
+  }
+  .wewill-text {
+    width: 321px;
   }
 }
 
@@ -122,8 +130,7 @@
   }
 
   .wewill-images {
-    width: 704px;
-    height: 463px;
+    max-width: 704px;
     border-radius: 80px;
   }
 }
@@ -165,7 +172,6 @@
   .wewill-images {
     width: 100%;
     max-width: 525px;
-    height: 536px;
     border-radius: 80px;
     background: var(--beige) repeat;
     background-image: radial-gradient(
@@ -175,15 +181,15 @@
     );
     background-size: 62px 60px;
     margin-left: 77px;
+    padding-top: 37px;
   }
   .wewill-form {
     max-width: 350px;
+    margin: 0;
   }
   .wewill-label {
     width: 100%;
     max-width: 350px;
     height: 48px;
-  }
-  .wewill-btn {
   }
 }
