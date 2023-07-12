@@ -90,9 +90,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
   .wewill {
     margin-bottom: 173px;
   }
@@ -132,13 +129,11 @@
   .wewill-images {
     max-width: 704px;
     border-radius: 80px;
+    padding: 17px 38px 0px 37px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
   .wewill {
     margin-bottom: 124px;
   }
