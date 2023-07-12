@@ -112,10 +112,13 @@
 
 .footer-address-item {
   text-align: center;
-  padding-bottom: 20px;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.36px;
+}
+
+.footer-address-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .footer-address-contacts {
@@ -128,10 +131,6 @@
   text-transform: uppercase;
 }
 
-.footer-address-link {
-  padding-bottom: 80px;
-}
-
 .footer-address-position {
   color: #141414;
   text-align: center;
@@ -142,6 +141,7 @@
   letter-spacing: -0.28px;
   white-space: pre-line;
 }
+
 
 @media (max-width: 375px) {
   .footer {
