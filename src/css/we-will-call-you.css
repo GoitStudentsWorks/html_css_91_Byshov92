@@ -1,5 +1,5 @@
 .wewill {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .wewill-title {
@@ -38,6 +38,13 @@
   padding: 15px 115px 15px 24px;
   margin-bottom: 40px;
 }
+.wewill-input {
+  border: none;
+  color: var(--dark-color);
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+}
 
 .wewill-btn {
   display: block;
@@ -59,6 +66,7 @@
 
 .wewill-input::placeholder {
   padding-left: 24px;
+  color: #c1bdbd;
 }
 .wewill-images {
   width: 100%;
@@ -77,9 +85,6 @@
 }
 /**-------------------------AMEDIA------------------------------------**/
 @media screen and (min-width: 375px) {
-  .container {
-    width: 375px; /* це виправив тім лід*/
-  }
   .wewill-title {
     width: 323px;
   }
@@ -90,13 +95,11 @@
 
 @media screen and (min-width: 768px) {
   .wewill {
-    margin-bottom: 173px;
+    padding-bottom: 173px;
   }
-  /* .wewill-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+  .wewill-box-2 {
+    margin-bottom: 97px;
+  }
 
   .wewill-title {
     width: 524px;
@@ -106,8 +109,12 @@
     font-weight: 500;
     line-height: 1.1;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .wewill-text {
+    margin-left: auto;
+    margin-right: auto;
     width: 499px;
     text-align: center;
     font-size: 18px;
@@ -117,6 +124,8 @@
     margin-bottom: 40px;
   }
   .wewill-form {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 350px;
   }
   .wewill-label {
@@ -124,7 +133,10 @@
     max-width: 350px;
     height: 48px;
   }
-
+  .wewill-img {
+    width: auto;
+    height: 446px;
+  }
   .wewill-images {
     max-width: 704px;
     border-radius: 80px;
@@ -138,11 +150,10 @@
   }
   .wewill-box {
     display: flex;
-    flex-direction: row;
+    gap: 77px;
   }
   .wewill-box-2 {
     width: 614px;
-    height: 340px;
     margin: auto;
   }
   .wewill-title {
@@ -155,6 +166,9 @@
   }
 
   .wewill-text {
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -174,7 +188,8 @@
       transparent 0
     );
     background-size: 62px 60px;
-    margin-left: 77px;
+
+    padding: 0;
     padding-top: 37px;
   }
   .wewill-form {
@@ -185,5 +200,10 @@
     width: 100%;
     max-width: 350px;
     height: 48px;
+  }
+
+  .wewill-img {
+    width: 525px;
+    height: auto;
   }
 }
