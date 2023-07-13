@@ -24,6 +24,6 @@
     mobileMenu.classList.remove('is-open');
     toggleMenuBtn.classList.remove('is-open');
     toggleMenuBtn.setAttribute('aria-expanded', false);
-    document.body.style.overflow = 'auto';
+    document.body.classList.remove('scroll-hidden');
   }
 })();

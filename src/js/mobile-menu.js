@@ -10,20 +10,18 @@
     toggleMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
     toggleMenuBtn.classList.toggle('is-open');
-
-    !isMenuOpen
-      ? (body.style.overflow = 'hidden')
-      : (body.style.overflow = 'auto');
+    body.classList.toggle('scroll-hidden');
   };
 
   toggleMenuBtn.addEventListener('click', toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
+    if (!e.matches || !mobileMenu.classList.contains('is-open')) return;
+
     mobileMenu.classList.remove('is-open');
     toggleMenuBtn.classList.remove('is-open');
     toggleMenuBtn.setAttribute('aria-expanded', false);
-    body.style.overflow = 'auto';
+    body.classList.remove('scroll-hidden');
   });
 })();
