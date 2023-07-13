@@ -247,8 +247,8 @@
 
 @media screen and (min-width: 768px) {
     .modal {
-        height: 853px;
-        max-height: 90vh;
+        height: 855px;
+        max-height: 97vh;
         overflow: auto;
         width: 704px;
         padding: 40px;
@@ -342,8 +342,8 @@
 @media screen and (min-width: 1280px) {
     .modal {
         width: 891px;
-        height: 911px;
-        max-height: 90vh;
+        height: 917px;
+        max-height: 95vh;
         overflow: auto;
         
     }
