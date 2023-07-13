@@ -1,6 +1,5 @@
 (() => {
   const anchors = document.querySelectorAll('.anchor');
-  const mediaQuery = window.matchMedia('(max-width: 767px)').matches;
 
   anchors.forEach(anchor => {
     anchor.addEventListener('click', () => {
@@ -8,9 +7,7 @@
         `${anchor.getAttribute('data-value')}`
       ).offsetTop;
 
-      if (mediaQuery) {
-        closeMenu();
-      }
+      closeMenu();
 
       if (anchor.getAttribute('data-value') === 'vegetables') {
         window.scrollTo({ top: scrollDiv - 40, behavior: 'smooth' });

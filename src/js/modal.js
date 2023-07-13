@@ -15,11 +15,9 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    const mediaQuery = window.matchMedia('(max-width: 767px)').matches;
-
     refs.modal.classList.toggle('is-hidden');
 
-    if (!refs.modal.classList.contains('is-hidden') && mediaQuery) {
+    if (!refs.modal.classList.contains('is-hidden')) {
       closeMenu();
     }
   }
