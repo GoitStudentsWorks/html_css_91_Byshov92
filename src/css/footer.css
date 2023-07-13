@@ -79,7 +79,6 @@
 /*! Футер соц іконки */
 
 .footer-social-list {
-  justify-content: center;
   display: flex;
   gap: 20px;
   margin-bottom: 40px;
@@ -223,8 +222,6 @@
     padding-bottom: 80px;
   }
 
-  .footer-img {}
-
   .footer-container {
     max-width: 100%;
     height: auto;
@@ -242,15 +239,9 @@
     margin-bottom: 0;
   }
 
-  .footer-menu {
-    /* margin: 0 166px; */
-  }
-
   .footer-section {
     flex-direction: row;
     flex-direction: column;
-
-    /* gap: 166px; */
   }
 
   .footer-address {

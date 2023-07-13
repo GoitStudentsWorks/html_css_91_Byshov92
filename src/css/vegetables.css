@@ -189,16 +189,7 @@
 .veg-pic {
   margin: 0 auto;
 }
-/*@media screen and (min-width: 768px) {
-  .veg-pic {
-    margin-bottom: 32px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .veg-pic {
-    margin-bottom: 23px;
-  }
-}*/
+
 .pic-height {
   height: 249px;
 }
@@ -207,32 +198,7 @@
     height: 261px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .veg-pic {
-    margin-bottom: 23px;
-  }
-}
-.pic-height {
-  height: 249px;
-}
-@media screen and (min-width: 768px) {
-  .veg-pic {
-    height: 261px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .veg-pic {
-    margin-bottom: 23px;
-  }
-}
-.pic-height {
-  height: 249px;
-}
-@media screen and (min-width: 768px) {
-  .veg-pic {
-    height: 261px;
-  }
-}
+
 .vegetables-button {
   display: block;
   min-width: 80px;
@@ -263,8 +229,7 @@
   fill: #ffffff;
   transform: rotate(14deg);
 }
-@media screen and (min-width: 375px) {
-}
+
 @media screen and (min-width: 768px) {
   .vegetables-button {
     min-width: 114px;
