@@ -41,8 +41,8 @@
     transform: translate(-50%, -50%);
     width: calc(100% - 30px);
     /* outline: 1px solid red; */
-    height: 903px;
-    max-height: 90vh;
+    /* height: 903px; */
+    max-height: 95vh;
     overflow: auto;
     padding: 20px;
     border-radius: 20px;
@@ -159,7 +159,7 @@
     display: block;
     margin-bottom: 14px;
     width: 100%;
-    padding: 14px 24px;
+    padding: 13px 24px;
     border-radius: 100px;
     border: 1px solid rgba(20, 20, 20, 0.3);
 }
@@ -308,7 +308,7 @@
         width: 360px;
     }
     .modal-form-label{
-        padding: 15px 24px;
+        padding: 14px 24px;
     }
 
     .modal-form-comment {
