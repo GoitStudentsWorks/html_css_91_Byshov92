@@ -269,23 +269,3 @@
     margin-top: 40px;
   }
 }
-
-/* some animation */
-.veg-card {
-  transition: all var(--tran-250);
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.veg-card:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  transform: scale(1.02);
-}
-
-.veg-card .pic-height {
-  transition: transform var(--tran-250);
-}
-
-.veg-card:hover .pic-height {
-  transform: scale(1.13) translateY(-6%);
-}
