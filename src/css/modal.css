@@ -252,8 +252,12 @@
         overflow: auto;
         width: 704px;
         padding: 40px;
-        
+        background-image: url(../img/modal-pic-tablet.png);
+        background-repeat: no-repeat;
+        background-position: right 0px bottom 0px;
+        background-attachment: local;
     }
+        
 
     .modal-title {
         font-size: 40px;
@@ -316,10 +320,9 @@
         padding: 15px 35px;
     }
 
-    .for-pos {
+    /* .for-pos {
         position: relative;
-        height: 0px;
-        width: 0px;
+        
     }
 
     .modal-background {
@@ -327,17 +330,20 @@
         position: absolute;
         bottom: -40px;
         left: 374px;
-        max-width: 290px;
-        max-height: 403px;
-        overflow: hidden;
+        width: 290px;
     }
 
     .modal-background-image {
-        min-width: 444px;
-        min-height: 413px;
-    }
+        max-height: 100%;
+    } */
 }
-
+/* фон для ретіни */
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .modal {
+    background-image: url(../img/modal-pic-tablet-2x.png);
+    background-size: 290px 403px ;
+  }
+}
 
 @media screen and (min-width: 1280px) {
     .modal {
@@ -345,6 +351,10 @@
         height: 917px;
         max-height: 95vh;
         overflow: auto;
+        background-image: url(../img/modal-pic.png);
+        background-repeat: no-repeat;
+        background-position: right 0px bottom 0px;
+        background-attachment: local;
         
     }
     .modal-list{
@@ -363,10 +373,16 @@
     .modal-item-img{
         width: 100%;
     }
-    .modal-background {
+    /* .modal-background {
         bottom: -40px;
         left: 399px;
-        min-width: 444px;
-        max-height: 410px;
+        width: 435px;
+        
+    } */
+}
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    .modal {
+        background-image: url(../img/modal-pic-2x.png);
+        background-size: 444px 410px;
     }
 }
