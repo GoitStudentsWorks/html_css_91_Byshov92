@@ -3,7 +3,6 @@
 }
 
 .wewill-title {
-  /* width: 323px; */
   color: var(--dark-color);
   font-size: 24px;
   font-weight: 500;
@@ -15,7 +14,6 @@
 }
 
 .wewill-text {
-  /* width: 321px; */
   color: var(--dark-color);
   text-align: center;
   font-size: 14px;
@@ -66,6 +64,9 @@
   border: none;
 }
 
+.wewill-btn:hover {
+  background-color: #a1c487;
+}
 .wewill-input::placeholder {
   color: #c1bdbd;
 }
@@ -146,6 +147,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .wewill {
+    padding-bottom: 124px;
+  }
   .wewill-box {
     display: flex;
     gap: 77px;
